@@ -1,4 +1,5 @@
 ### 一些个人仓库
+> 自从github国内抽风后再没管理过。最近重新整理后陆续上传，可能会有缺失，如果需要可以邮件催我，ifsoar@gmail.com。
 
 #### [imgtrams-core](https://github.com/ifsoar/imgtrans-core)
 > 偶然发现了一个支持原图下载的图床，遂有了想法。核心原理是将文件的二进制信息转换成图片的像素信息，从而可以将图床作为网盘
