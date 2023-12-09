@@ -10,27 +10,29 @@
 > 
 > 由intellij官方文档翻译而来，用来给自己写插件参考用
 
-#### [Minecraft : MoreGunpowderMod](xxx)
+#### [Minecraft : MoreGunpowderMod](https://github.com/ifsoar/MoreGunpowderMod)
 > 我的世界：更多火药mod，forge1.19 - 1.20
 > 
 > 添加了一种可以种植的火药植物，类似甘蔗
 
-#### [Minecraft : McBot](xxx)
+#### [Minecraft : McBot](https://github.com/ifsoar/McBot)
 > 【个人使用】
 > 
 > 我的世界，一个androidApp客户端 + 一个Golang实现的Windows程序
 > 
 > 实现了自动左键、定时左键、自动右键、自动种植、潜行等功能
 
-#### [Java下Arc人脸识别库的简单使用](xxx)
+#### [Java下Arc人脸识别库的简单使用](https://github.com/ifsoar/ArcFaceDemo)
 > 【个人使用】
 > 
 > 简单试用了一下使用java进行arc人脸的离线识别，一个demo
 
-#### [用SketchUp画的一个背靠式开放式机箱草图](xxx)
+#### [用SketchUp画的一个背靠式开放式机箱草图](https://github.com/ifsoar/mini_case_sketch)
 > 【个人使用】
 > 
-> 自己做开放式机箱，学习了一下sketchUp怎么用，简单画了一下草图
+> 为了把两块主板塞一个机箱省空间，计划用亚力克和铝型材自己做一个背靠背机箱
+> 
+> 学习了一下sketchUp怎么用，简单画了一下草图，不具备参考性
 
 ### android
 
