@@ -1,8 +1,57 @@
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <H4>你好</H4>
-  </body>
+<html lang="zh-CN">
+<head>
+    <title>Soar`s blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+<div id="content">
+    <span id="head">Soar`s blog</span>
+    <a href="https://github.com/ifsoar?tab=repositories"><span id="githubLink">全部github仓库</span></a>
+    <hr/>
+    <div id="mdHost"></div>
+</div>
+<div id="topDiv">Top</div>
+<script src="js/marked.min.js"></script>
+<script>
+    document.getElementById('topDiv').addEventListener('click',function () {
+        // 立即将页面滚动到顶部
+        window.scrollTo(0, 0);
+    });
+    document.getElementById('head').addEventListener('click', function () {
+        loadMd('md/index.md');
+    });
+    loadMd('md/index.md');
+    document.body.addEventListener('click', function () {
+        let target = event.target || event.srcElement;
+        if (target.nodeName.toLocaleLowerCase() === 'a') {
+            if (target.getAttribute('href').toLocaleLowerCase().endsWith('.md')) {
+                if (event.preventDefault) {
+                    event.preventDefault();
+                } else {
+                    window.event.returnValue = true;
+                }
+                loadMd('md/' + target.getAttribute('href'));
+            }
+        }
+    });
+
+    function loadMd(url) {
+        window.scrollTo(0, 0);
+        let xmlHttp = new XMLHttpRequest();
+        // 得到服务器响应后，对得到的Markdown文档进行解析
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                // 这里调用了marked框架中的marked函数实现Markdown2HTML的解析
+                document.getElementById("mdHost").innerHTML = marked.parse(xmlHttp.responseText);
+            }
+        }
+
+
+        // 向服务器发送请求，获取你需要的Markdown文档
+        xmlHttp.open("GET", url, true);
+        xmlHttp.send();
+    }
+</script>
+</body>
 </html>

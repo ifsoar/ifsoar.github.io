@@ -1,0 +1,47 @@
+html, body {
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #2d9ed7;
+}
+
+a:hover {
+    color: #1760c9;
+}
+
+#content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#head {
+    font-size: 30px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+#githubLink {
+    padding-left: 60px;
+    color: dimgrey;
+}
+
+#topDiv {
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    background: #a3a671;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
